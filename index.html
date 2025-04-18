@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Dark Portfolio - Your Name</title>
     <style>
         body, html {
@@ -124,14 +125,37 @@
                 font-size: 2em;
             }
         }
+        .social-icons {
+            display: flex;
+            gap: 20px;
+            padding: 20px 0;
+        }
+        
+        .social-icons a {
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.2);
+        }
+        
+        .social-icons a:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.1);
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
         <header>
-            <h1>Your Name</h1>
-            <p>Computer Science Professional | Dark Theme Developer</p>
+            <h1>Vương Mạnh Đức</h1>
+            <p>Computer Science Professional</p>
         </header>
 
         <nav>
@@ -144,25 +168,40 @@
 
         <section id="about" class="section">
             <h2>About Me</h2>
-            <p>Exploring the depths of computer science with a passion for creating immersive and visually appealing digital experiences, especially in dark themes. Dedicated to crafting elegant and efficient solutions.</p>
+            <section class="introduction">
+                <h1>Hello! I&rsquo;m <strong>Manh Duc</strong> 👋</h1>
+                
+                <article>
+                  <p>A passionate Computer Science student at Thang Long University (Hanoi, Vietnam), where I&rsquo;m honing my skills in programming, algorithms, and software development. My academic journey focuses on solving real-world problems through technology, with a keen interest in AI, web development, and data science.</p>
+                  
+                  <ul>
+                    <li>🔹 <strong>What drives me</strong>: Curiosity for how technology transforms lives.</li>
+                    <li>🔹 <strong>Current focus</strong>: Mastering Python/Java, building projects, and contributing to open-source.</li>
+                    <li>🔹 <strong>Goal</strong>: To become a full-stack developer or AI engineer, creating scalable solutions.</li>
+                  </ul>
+                </article>
+                
+                <p>Let&rsquo;s connect and geek out about tech! 🚀</p>
+              </section>
         </section>
 
         <section id="education" class="section">
             <h2>Education</h2>
             <p><strong>Bachelor of Science in Computer Science</strong><br>
-            [University Name], [City, Country]<br>
-            [Expected Graduation Year or Graduation Year]</p>
+            Thang Long University, Ha Noi, Viet Nam<br>
+            Graduation Year: 2026</p>
         </section>
 
         <section id="skills" class="section">
             <h2>Skills</h2>
             <p><strong>Programming Languages:</strong> Python, JavaScript, Java, C++, SQL</p>
-            <p><strong>Web Technologies:</strong> React, Node.js, Express.js, HTML5, CSS3, Dark Theme Design</p>
-            <p><strong>Tools & Frameworks:</strong> Git, Docker, AWS, Agile Methodologies</p>
+            <!--<p><strong>Web Technologies:</strong> React, Node.js, Express.js, HTML5, CSS3, Dark Theme Design</p>
+            <p><strong>Tools & Frameworks:</strong> Git, Docker, AWS, Agile Methodologies</p> -->
         </section>
 
         <section id="projects" class="section">
             <h2>Projects</h2>
+            <!--
             <div class="project">
                 <h3>Project Title 1</h3>
                 <p>Detailed description of Project 1, including technologies used and key achievements, with a focus on dark theme implementation if applicable.</p>
@@ -171,13 +210,27 @@
                 <h3>Project Title 2</h3>
                 <p>Detailed description of Project 2, including technologies used and key achievements, with a focus on dark theme implementation if applicable.</p>
             </div>
+            -->
         </section>
 
         <section id="contact" class="section">
             <h2>Contact Me</h2>
-            <p>Email: your.email@example.com</p>
-            <p>LinkedIn: linkedin.com/in/yourprofile</p>
-            <p>GitHub: github.com/yourusername</p>
+            <div class="social-icons";">
+                <!-- White Email Icon -->
+                <a href="mailto:contact@yourlibrary.org" aria-label="Email us">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                
+                <!-- White GitHub Icon -->
+                <a href="https://github.com/mahnduc" target="_blank" aria-label="Our GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                
+                <!-- White LinkedIn Icon -->
+                <a href="https://www.linkedin.com/in/%C4%91%E1%BB%A9c-m%E1%BA%A1nh-2634a7256/" target="_blank" aria-label="Our LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
         </section>
 
         <footer>
